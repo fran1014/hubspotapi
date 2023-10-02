@@ -7,7 +7,7 @@
 					<div class="row mb-3">
 						<label class="control-label col-md-3"> Company Name <span class="text-danger">*</span></label>
 						<div class="col-md-9">
-							<input type="text" name="name" class="form-control input-name" placeholder="Company Name" value="<?= $company_info->properties->nmae->value;?>" />
+							<input type="text" name="name" class="form-control input-name" placeholder="Company Name" value="<?= $company_info->properties->name->value;?>" />
 							<div id="error"></div>
 						</div>
 					</div>
