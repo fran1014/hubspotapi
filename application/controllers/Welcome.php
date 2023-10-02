@@ -100,10 +100,10 @@ class Welcome extends CI_Controller {
 
 		foreach ($companyList as $row) {
 			$row 				=	array(
-				$row->nombre,
+				$row->name,
 				$row->pais,
-				$row->ciudad,
-				$row->dirección,
+				$row->city,
+				$row->addres,
 				$row->CIF
 			);
 		    fputcsv($output, $row);
