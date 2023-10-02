@@ -19,10 +19,10 @@ class Welcome extends CI_Controller {
 	        foreach ($companyList as $obj) {
 	            $company_data = array(
 	                "properties" => [
-	                    array("name" => "name", "value" => $obj->nombre),
+	                    array("name" => "name", "value" => $obj->name),
 	                    array("name" => "pais", "value" => $obj->pais),
-	                    array("name" => "city", "value" => $obj->ciudad),
-	                    array("name" => "address", "value" => $obj->dirección),
+	                    array("name" => "city", "value" => $obj->city),
+	                    array("name" => "address", "value" => $obj->address),
 	                    array("name" => "cif", "value" => $obj->CIF)
 	                ]
 	            );
@@ -55,7 +55,7 @@ class Welcome extends CI_Controller {
 			$this->form_validation->set_rules('name','Company Name','trim|required');
 			$this->form_validation->set_rules('city','City','trim|required');
 			$this->form_validation->set_rules('pais','Pais','trim|required');
-			$this->form_validation->set_rules('address','Direccion','trim|required');
+			$this->form_validation->set_rules('address','Address','trim|required');
 			$this->form_validation->set_rules('cif','CIF','trim|required');
 			if($this->form_validation->run()==false){
 				$error['name']						=	form_error('name','<p class="text-danger mb-0">','</p>');

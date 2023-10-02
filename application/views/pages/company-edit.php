@@ -5,9 +5,9 @@
 				<form method="post" onsubmit="return false" id="companyEditInfo" autocomplete="off">
 					<input type="hidden" name="company_id" value="<?= $company_id;?>">
 					<div class="row mb-3">
-						<label class="control-label col-md-3">Company Name <span class="text-danger">*</span></label>
+						<label class="control-label col-md-3"> Company Name <span class="text-danger">*</span></label>
 						<div class="col-md-9">
-							<input type="text" name="name" class="form-control input-name" placeholder="Company Name" value="<?= $company_info->properties->name->value;?>" />
+							<input type="text" name="name" class="form-control input-name" placeholder="Company Name" value="<?= $company_info->properties->nmae->value;?>" />
 							<div id="error"></div>
 						</div>
 					</div>

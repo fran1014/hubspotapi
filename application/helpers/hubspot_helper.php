@@ -8,7 +8,7 @@ if (!defined('BASEPATH'))
 if(!function_exists('insertDataOnHubSpot')){
     
     function insertDataOnHubSpot($company_data){
-        $access_token           =   'pat-na1-d0e6e1e1-05a5-44ca-b96c-882743ebfc97';
+        $access_token           =   'pat-eu1-411e42a0-11c9-411c-8134-aa3cc989425e';
         // HubSpot API endpoint for creating a company
         $api_url = "https://api.hubapi.com/companies/v2/companies";
         
@@ -46,7 +46,7 @@ if(!function_exists('insertDataOnHubSpot')){
 
 if(!function_exists('getCompaniesListFromHubSpot')){
     function getCompaniesListFromHubSpot(){
-        $access_token           =   'pat-na1-d0e6e1e1-05a5-44ca-b96c-882743ebfc97';
+        $access_token           =   'pat-eu1-411e42a0-11c9-411c-8134-aa3cc989425e';
         $endPoint           =   "https://api.hubapi.com/companies/v2/companies";
 
         $ch = curl_init();
@@ -71,7 +71,7 @@ if(!function_exists('getCompaniesListFromHubSpot')){
 
 if(!function_exists('getSinleCompanyInfo')){
     function getSinleCompanyInfo($company_id){
-        $access_token           =   'pat-na1-d0e6e1e1-05a5-44ca-b96c-882743ebfc97';
+        $access_token           =   'pat-eu1-411e42a0-11c9-411c-8134-aa3cc989425e';
         $endPoint           =   "https://api.hubapi.com/companies/v2/companies/".$company_id;
 
         $ch = curl_init();
@@ -96,7 +96,7 @@ if(!function_exists('getSinleCompanyInfo')){
 if (!function_exists('updateCompanyInfo')) {
     
     function updateCompanyInfo($company_id, $company_data) {
-        $access_token = 'pat-na1-d0e6e1e1-05a5-44ca-b96c-882743ebfc97';
+        $access_token = 'pat-eu1-411e42a0-11c9-411c-8134-aa3cc989425e';
         // HubSpot API endpoint for updating a company
         $api_url = "https://api.hubapi.com/companies/v2/companies/{$company_id}";
 
