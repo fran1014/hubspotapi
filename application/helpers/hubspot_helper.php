@@ -70,7 +70,7 @@ if(!function_exists('getCompaniesListFromHubSpot')){
 }
 
 if(!function_exists('getSinleCompanyInfo')){
-    function getSinleCompanyInfo($company_id){
+    function getSingleCompanyInfo($company_id){
         $access_token           =   'pat-eu1-411e42a0-11c9-411c-8134-aa3cc989425e';
         $endPoint           =   "https://api.hubapi.com/companies/v2/companies/".$company_id;
 
